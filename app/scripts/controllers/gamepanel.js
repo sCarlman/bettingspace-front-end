@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name banterFnApp.controller:MainCtrl
+ * @name banterFnApp.controller:GamepanelCtrl
  * @description
- * # MainCtrl
+ * # GamepanelCtrl
  * Controller of the banterFnApp
  */
 angular.module('banterFnApp')
-  .controller('MainCtrl', function () {
+  .controller('GamepanelCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

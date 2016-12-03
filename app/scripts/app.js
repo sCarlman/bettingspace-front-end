@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name bettingSpaceApp
+ * @name banterFnApp
  * @description
- * # bettingSpaceApp
+ * # banterFnApp
  *
  * Main module of the application.
  */
 angular
-  .module('bettingSpaceApp', [
+  .module('banterFnApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -28,6 +28,11 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+      .when('/gamePanel', {
+        templateUrl: 'views/gamepanel.html',
+        controller: 'GamepanelCtrl',
+        controllerAs: 'gamePanel'
       })
       .otherwise({
         redirectTo: '/'
