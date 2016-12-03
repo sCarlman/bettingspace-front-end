@@ -8,10 +8,8 @@
  * Controller of the bettingSpaceApp
  */
 angular.module('bettingSpaceApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope,$location) {
+    $scope.changeView = function(view){
+        $location.path(view); // path not hash
+    }
   });
